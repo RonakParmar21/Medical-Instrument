@@ -1,0 +1,134 @@
+body {
+  background-color: #333;
+}
+
+.img1 {
+  /*width: 100px;*/
+  /*height: 100px;*/
+/*  height: 100px;
+  position: relative;*/
+  animation: scroll 60s linear infinite;
+}
+
+#slide {
+    width: 300px;
+    height: 200px;
+}
+
+#slide img {
+    width: 300px;
+    height: 200px;
+}
+    
+.img2 {
+    
+  width: 100px;
+  height: 100px;
+ 
+}
+
+#slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+
+#slider {
+  margin-top: 70px;
+  background-color: whitesmoke;
+  padding: 8em 2em;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translatex(-1000%)}
+}
+
+
+
+
+
+/*feedback form css*/
+.container {
+                border-radius: 5px;
+                background-color: #d66ff66;
+                padding: 2px;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear : both;
+            }
+
+            .col-70{
+                margin-left: 5em;
+                margin-top: 10px;
+                padding: 10px;
+                width: 90%;
+            }
+
+            input[type=text], [type=email] {
+                width: 100%;
+                padding: 12px;
+                border: hidden;
+                font-size: 18px;
+                font-family: calibri;
+                border-bottom: 2px solid grey;
+                outline: none;
+                box-sizing: border-box;
+                resize: vertical;
+            }
+
+            input:focus {
+                font-style: italic;
+                border-bottom: 2px solid black;
+            }
+
+            textarea{
+                width: 100%;
+                font-style:calibri;
+                padding: 12px;
+                border: hidden;
+                font-size: 18px;
+                font-family: calibri;
+                border-bottom: 2px solid grey;
+                outline: none;
+                height: 100px;
+                resize: none;
+            }
+
+            textarea:focus  {
+                font-style: italic;
+                border-bottom: 2px solid black;
+            }
+
+            input[type=submit] {
+                border: 2px solid grey;
+                padding: 12px 12px 10px 12px;
+                font-size: 18px;
+                font-family: calibri;
+                background-color: white;
+                font-weight: 700;
+                float: right;
+                color: grey;
+                text-transform: uppercase;
+                transition: all 0.35s ease-in-out;
+            }
+
+            input[type=submit]:hover {
+                color: black;
+                padding: 12px 56px 10px 56px;
+                ouline: none;
+                border: 2px solid black;
+                letter-spacing: 0px;
+
+            }
+
+            @media screen and (max-width: 600px) {
+                .row, .col-70, input[type=submit] {
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
