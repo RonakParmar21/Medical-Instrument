@@ -243,6 +243,11 @@
         <link rel="stylesheet" href="assets/css/style-prefix.css">      
     </head>
     <body style="background-color: #f7f7f7;">
+  <%
+        // Java code for generating dynamic content
+        String dynamicContent = "This content is generated dynamically.";
+    %>
+    <p><%= dynamicContent %></p>
         <%@include file="nav-header.jsp" %>
         <%@include file="slider.jsp" %>
         <%@include file="category-slider.jsp" %>
