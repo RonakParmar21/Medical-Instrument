@@ -26,7 +26,7 @@ public class SendingEmail {
     
     public void sendMail() {
         String email = "parmarronak21112003@gmail.com";
-        String password = "KJRK@21_11_2003";
+        String password = "";
         Properties properties = new Properties();
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
